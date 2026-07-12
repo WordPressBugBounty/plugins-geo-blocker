@@ -1,0 +1,18 @@
+{
+    "name": "medshi/geo-blocker",
+    "description": "Blocks website access based on visitor's geolocation using the ipwho.is API.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "medshi",
+            "homepage": "https://profiles.wordpress.org/medshi8/"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Medshi\\GeoBlocker\\": "includes/"
+        }
+    },
+    "require": {}
+} 

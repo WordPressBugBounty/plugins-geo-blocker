@@ -1,0 +1,1474 @@
+/**
+ * Geo Blocker Admin Styles
+ */
+
+/* Dashboard Styles */
+.medshi-geo-block-dashboard {
+  margin-top: 20px;
+}
+
+.medshi-geo-block-status-card,
+.medshi-geo-block-bypass-card,
+.medshi-geo-block-stats-card,
+.medshi-geo-block-recent-logs {
+  background: #fff;
+  border: 1px solid #ccd0d4;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.medshi-geo-block-status-indicator {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.status-active {
+  color: #46b450;
+}
+
+.status-inactive {
+  color: #dc3232;
+}
+
+.medshi-geo-block-warning {
+  color: #dc3232;
+}
+
+.medshi-geo-block-stats-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.medshi-geo-block-stats-list li {
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.stat-value {
+  font-weight: bold;
+}
+
+code {
+  display: block;
+  padding: 10px;
+  background: #f0f0f0;
+  margin: 10px 0;
+}
+
+/* Logs Tab Styles */
+.medshi-geo-block-logs-tab {
+  margin-top: 20px;
+}
+
+/* Controls Bar Styles */
+.medshi-geo-block-controls-bar {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.medshi-geo-block-filters-container {
+  flex-grow: 0;
+}
+
+.medshi-geo-block-filters {
+  margin: 0;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+}
+
+.medshi-geo-block-filters select {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.medshi-geo-block-actions-container {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+/* Chart Styles */
+.medshi-geo-block-chart-wrapper {
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.medshi-geo-block-chart-wrapper h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.medshi-geo-block-chart-container {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  position: relative;
+  padding: 10px 0;
+}
+
+canvas#medshiGeoBlockLogChart {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 400px;
+}
+
+/* Table Styles */
+.medshi-geo-block-table-wrapper {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+/* New Section Styles for Logs Tab */
+.medshi-geo-block-section {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 25px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.medshi-geo-block-section-header {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #4a90e2;
+  color: #fff;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.medshi-geo-block-section-header .dashicons {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.medshi-geo-block-section-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  flex-grow: 1;
+}
+
+.medshi-geo-block-section-filters {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.medshi-geo-block-section-content {
+  padding: 20px;
+}
+
+.medshi-geo-block-section-filters em {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Summary Cards Styles */
+.medshi-geo-block-summary-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.medshi-geo-block-summary-cards-area {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.medshi-geo-block-summary-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  border-top: 4px solid #4a90e2; /* Primary Blue */
+  transition: box-shadow 0.3s ease;
+}
+
+.medshi-geo-block-summary-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.medshi-geo-block-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #50575e;
+}
+
+.medshi-geo-block-card-header .dashicons {
+  font-size: 20px;
+  margin-right: 10px;
+  color: inherit;
+}
+
+.medshi-geo-block-card-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: inherit;
+}
+
+.medshi-geo-block-card-body {
+  text-align: left;
+}
+
+.medshi-geo-block-card-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2c3338;
+  line-height: 1.1;
+  margin-bottom: 5px;
+}
+
+.medshi-geo-block-card-desc {
+  font-size: 13px;
+  color: #787c82;
+}
+
+/* Specific card styling for different card types */
+.medshi-geo-block-summary-card:nth-child(1) .medshi-geo-block-card-header .dashicons {
+  color: #4a90e2; /* Blue */
+}
+
+.medshi-geo-block-summary-card:nth-child(2) .medshi-geo-block-card-header .dashicons {
+  color: #f5a623; /* Orange/Yellow */
+}
+
+.medshi-geo-block-summary-card.medshi-geo-block-card-blocked .medshi-geo-block-card-header .dashicons {
+  color: #d63638; /* Red */
+}
+
+.medshi-geo-block-summary-card.medshi-geo-block-card-allowed .medshi-geo-block-card-header .dashicons {
+  color: #28a745; /* Green */
+}
+
+/* Chart Filter Styles */
+.medshi-geo-block-filter-item {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px 8px;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0 5px;
+}
+
+.medshi-geo-block-filter-item .dashicons {
+  color: #fff;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.medshi-geo-block-chart-filter {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 0 4px;
+  font-size: 13px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  min-width: 120px;
+}
+
+.medshi-geo-block-chart-filter option {
+  color: #333;
+  background-color: #fff;
+  padding: 5px;
+  margin: 3px 0;
+}
+
+/* Filter Dropdown Icons */
+.medshi-geo-block-chart-filter option .dashicons,
+.medshi-geo-block-table-filter option .dashicons {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+/* Modified dropdown styles for select with icons */
+.medshi-geo-block-section-filters select {
+  padding-right: 30px; /* Space for dropdown arrow */
+  min-width: 140px;
+}
+
+/* Enhanced Chart Styles */
+.medshi-geo-block-chart-container {
+  position: relative;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Loading Spinner Overlay */
+.medshi-chart-loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.medshi-chart-loading-overlay .spinner {
+  visibility: visible;
+  float: none;
+  margin: 0;
+}
+
+/* No Data Message */
+.medshi-geo-block-no-data {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  padding: 30px 0;
+}
+
+/* Access Logs Section Table Filters */
+.medshi-geo-block-access-logs .medshi-geo-block-section-filters .medshi-geo-block-filter-item {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px 8px;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.medshi-geo-block-access-logs .medshi-geo-block-section-filters .dashicons {
+  color: #fff;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.medshi-geo-block-access-logs .medshi-geo-block-section-filters select,
+.medshi-geo-block-access-logs .medshi-geo-block-section-filters input[type="search"] {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 0 4px;
+  font-size: 13px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.medshi-geo-block-access-logs .medshi-geo-block-section-filters input[type="search"]::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.medshi-geo-block-access-logs .medshi-geo-block-section-filters select option {
+  color: #333;
+  background-color: #fff;
+}
+
+.medshi-geo-block-access-logs .medshi-geo-block-section-filters .button.secondary {
+  /* Style the filter button */
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.4);
+  text-shadow: none;
+  box-shadow: none;
+  padding: 0 10px;
+  line-height: 27px;
+  height: 29px;
+}
+
+.medshi-geo-block-access-logs .medshi-geo-block-section-filters .button.secondary:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.medshi-geo-block-table-filters-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Add button-danger style */
+.button.button-danger {
+  background-color: #dc3232;
+  border-color: #b32d2e;
+  color: #fff;
+}
+
+.button.button-danger:hover {
+  background-color: #b32d2e;
+  border-color: #8f2424;
+}
+
+/* Hide dashicons from the filter items as we're using emojis now */
+.medshi-geo-block-filter-item .dashicons {
+  display: none;
+}
+
+/* Dropdown icons using ::before pseudo element for better display */
+.medshi-geo-block-filter-item:nth-child(1)::before {
+  content: "📅";
+  margin-right: 5px;
+}
+
+.medshi-geo-block-filter-item:nth-child(2)::before {
+  content: "🔍";
+  margin-right: 5px;
+}
+
+.medshi-geo-block-filter-item:nth-child(3)::before {
+  content: "🛡️";
+  margin-right: 5px;
+}
+
+.medshi-geo-block-filter-item:nth-child(4)::before {
+  content: "📊";
+  margin-right: 5px;
+}
+
+/* Dashboard Content Styles */
+.medshi-geo-block-dashboard-content {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Dashboard Cards */
+.medshi-geo-block-dashboard-card {
+  height: 100%;
+}
+
+.medshi-geo-block-status-indicator {
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.medshi-geo-block-status-indicator.status-active {
+  background-color: rgba(70, 180, 80, 0.1);
+  border-left: 4px solid #46b450;
+}
+
+.medshi-geo-block-status-indicator.status-inactive {
+  background-color: rgba(220, 50, 50, 0.1);
+  border-left: 4px solid #dc3232;
+}
+
+.medshi-geo-block-warning {
+  color: #dc3232;
+  font-style: italic;
+}
+
+/* Code Display */
+.medshi-geo-block-code-display {
+  background: #f6f7f7;
+  border: 1px solid #dcdcde;
+  padding: 12px;
+  font-family: monospace;
+  border-radius: 3px;
+  word-break: break-all;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+/* Stats List */
+.medshi-geo-block-stats-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.medshi-geo-block-stats-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f1;
+}
+
+.medshi-geo-block-stats-list li:last-child {
+  border-bottom: none;
+}
+
+.medshi-geo-block-stats-list .stat-label {
+  color: #646970;
+}
+
+.medshi-geo-block-stats-list .stat-value {
+  font-weight: 600;
+  color: #2c3338;
+}
+
+/* Log Status Styling */
+.log-status {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.log-status.error {
+  background-color: rgba(220, 50, 50, 0.1);
+  color: #b32d2e;
+}
+
+.log-status.success {
+  background-color: rgba(70, 180, 80, 0.1);
+  color: #2e7d32;
+}
+
+.log-status.warning {
+  background-color: rgba(255, 187, 51, 0.1);
+  color: #b7791f;
+}
+
+.log-status.info {
+  background-color: rgba(0, 124, 186, 0.1);
+  color: #0078a0;
+}
+
+/* Plugin Status Banner */
+.medshi-geo-block-plugin-status-banner {
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.medshi-geo-block-status-active {
+  background-color: #e7f7e9;
+  border-left: 4px solid #46b450;
+  color: #2a7231;
+}
+
+.medshi-geo-block-status-inactive {
+  background-color: #fbeaea;
+  border-left: 4px solid #dc3232;
+  color: #a02424;
+}
+
+.medshi-geo-block-plugin-status-banner .dashicons {
+  margin-right: 8px;
+}
+
+.medshi-geo-block-status-note {
+  margin-left: auto;
+  font-size: 12px;
+}
+
+.medshi-geo-block-status-note a {
+  text-decoration: none;
+}
+
+/* Status Card Colors */
+.medshi-geo-block-card-active .medshi-geo-block-card-header {
+  background-color: rgba(70, 180, 80, 0.1);
+}
+
+.medshi-geo-block-card-active .medshi-geo-block-card-header .dashicons {
+  color: #46b450;
+}
+
+.medshi-geo-block-card-active .medshi-geo-block-card-value {
+  color: #46b450;
+}
+
+.medshi-geo-block-card-inactive .medshi-geo-block-card-header {
+  background-color: rgba(220, 50, 50, 0.1);
+}
+
+.medshi-geo-block-card-inactive .medshi-geo-block-card-header .dashicons {
+  color: #dc3232;
+}
+
+.medshi-geo-block-card-inactive .medshi-geo-block-card-value {
+  color: #dc3232;
+}
+
+/* Login Bypass URL Display */
+.medshi-geo-block-bypass-url-display {
+  word-break: break-all;
+  display: block;
+  background: #f0f0f1;
+  padding: 8px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+/* Full Width Section */
+.medshi-geo-block-full-width-section {
+  width: 100%;
+  clear: both;
+  margin-top: 30px;
+  float: none;
+  display: block;
+}
+
+/* Full Width Card */
+.medshi-geo-block-full-width-card {
+  grid-column: 1 / -1; /* Make card span all columns */
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Improve Table Responsiveness */
+.medshi-geo-block-table-wrapper {
+  overflow-x: auto;
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+.medshi-geo-block-table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 1em 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.medshi-geo-block-table-wrapper th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  text-align: left;
+  padding: 12px 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.medshi-geo-block-table-wrapper td {
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f0;
+  vertical-align: middle;
+}
+
+.medshi-geo-block-table-wrapper tr:last-child td {
+  border-bottom: none;
+}
+
+.medshi-geo-block-table-wrapper tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Copy Button Visual Feedback */
+.medshi-geo-block-copy-feedback {
+  display: none;
+  margin-left: 10px;
+  color: #46b450;
+  font-weight: 500;
+  background-color: rgba(70, 180, 80, 0.1);
+  padding: 2px 8px;
+  border-radius: 3px;
+  animation: fadeinout 2s linear;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.medshi-geo-block-copy-feedback.visible {
+  opacity: 1;
+}
+
+@keyframes fadeinout {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Enhanced styling for copy button */
+.medshi-geo-block-copy-button {
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.medshi-geo-block-copy-button:hover {
+  background: #f0f0f0;
+}
+
+.medshi-geo-block-copy-button:active {
+  transform: translateY(1px);
+}
+
+/* Table data labels for responsive display */
+.medshi-geo-block-table-wrapper td[data-label]:before {
+  display: none;
+}
+
+/* Better focus indicator for tooltip icons */
+.medshi-geo-block-tooltip:focus {
+  outline: 2px solid #4a90e2;
+  border-radius: 50%;
+}
+
+/* Accessibility - Focus States */
+.medshi-geo-block-copy-button:focus,
+.medshi-geo-block-summary-card a:focus,
+.medshi-geo-block-section a:focus {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 3px #4a90e2;
+}
+
+/* Dashboard Tier Layout */
+.medshi-geo-block-dashboard-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.medshi-geo-block-dashboard-content > * {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 960px) {
+  .medshi-geo-block-dashboard-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Country Selector Header */
+.medshi-geo-block-country-selector-header {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.medshi-geo-block-country-selector-header h4 {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #23282d;
+}
+
+/* Region Filter Enhancements */
+.medshi-geo-block-region-filters {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.medshi-geo-block-region-filter-btn {
+    padding: 6px 12px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.medshi-geo-block-region-filter-btn:hover {
+    background-color: #e0e0e0;
+    border-color: #ccc;
+}
+
+.medshi-geo-block-region-filter-btn.active {
+    background-color: #2271b1;
+    border-color: #135e96;
+    color: #fff;
+}
+
+/* Country Tools (Search + Select All) */
+.medshi-geo-block-country-tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Search Input Enhancements */
+.medshi-geo-block-country-search-container {
+    position: relative;
+    flex: 1;
+    min-width: 200px;
+    max-width: 500px;
+}
+
+.medshi-geo-block-country-search {
+    width: 100%;
+    padding: 8px 10px;
+    padding-right: 34px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) inset;
+    transition: border-color 0.2s ease;
+}
+
+.medshi-geo-block-country-search:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+    outline: none;
+}
+
+.medshi-geo-block-country-search-container .dashicons {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+    pointer-events: none;
+}
+
+/* Select/Deselect All Controls */
+.medshi-geo-block-select-all-controls {
+    display: flex;
+    align-items: center;
+}
+
+.medshi-geo-block-select-all-toggle {
+    margin-right: 5px;
+}
+
+/* Countries List */
+.medshi-geo-block-country-list {
+    max-height: 350px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #fafafa;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    min-height: 100px; /* Added minimum height */
+    height: auto; /* Ensure height adapts to content */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.medshi-geo-block-country-item {
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 8px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.medshi-geo-block-country-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.07);
+}
+
+.medshi-geo-block-country-toggle-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Toggle Switch Styling */
+.medshi-geo-block-toggle-slider {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 34px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    transition: background-color 0.2s;
+}
+
+.medshi-geo-block-toggle-slider::before {
+    content: '';
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+.medshi-geo-block-country-toggle:checked + .medshi-geo-block-toggle-slider {
+    background-color: #2271b1;
+}
+
+.medshi-geo-block-country-toggle:checked + .medshi-geo-block-toggle-slider::before {
+    transform: translateX(16px);
+}
+
+.medshi-geo-block-country-toggle {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.medshi-geo-block-country-flag {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.medshi-geo-block-country-name {
+    font-size: 13px;
+    flex-grow: 1;
+}
+
+/* Loading States */
+.medshi-geo-block-countries-loading,
+.medshi-geo-block-region-filters-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    padding: 20px 0;
+    flex-direction: column;
+    width: 100%;
+}
+
+.medshi-geo-block-countries-loading .spinner {
+    float: none;
+    margin-bottom: 10px;
+    visibility: visible;
+}
+
+/* Empty State */
+.medshi-geo-block-country-list-empty {
+    width: 100%;
+    text-align: center;
+    color: #666;
+    padding: 30px 0;
+    font-style: italic;
+    grid-column: 1 / -1;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 782px) {
+    .medshi-geo-block-country-list {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .medshi-geo-block-country-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .medshi-geo-block-country-tools {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .medshi-geo-block-select-all-controls {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 782px) {
+  .medshi-geo-block-summary-cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .medshi-geo-block-section-filters {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .medshi-geo-block-filter-item {
+    width: 100%;
+  }
+
+  .medshi-geo-block-actions-container {
+    flex-wrap: wrap;
+  }
+
+  .widefat th.column-timestamp,
+  .widefat th.column-ip_address,
+  .widefat th.column-country_code,
+  .widefat th.column-status {
+    width: auto !important;
+  }
+
+  .medshi-geo-block-status-note {
+    display: none;
+  }
+
+  .medshi-geo-block-full-width-card {
+    margin-bottom: 15px;
+  }
+
+  /* Responsive table */
+  .medshi-geo-block-table-wrapper table,
+  .medshi-geo-block-table-wrapper table thead,
+  .medshi-geo-block-table-wrapper table tbody,
+  .medshi-geo-block-table-wrapper table th,
+  .medshi-geo-block-table-wrapper table td,
+  .medshi-geo-block-table-wrapper table tr {
+    display: block;
+  }
+
+  .medshi-geo-block-table-wrapper table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .medshi-geo-block-table-wrapper table tr {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+
+  .medshi-geo-block-table-wrapper table td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    min-height: 30px;
+  }
+
+  .medshi-geo-block-table-wrapper table td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+
+  .medshi-geo-block-table-wrapper table td:nth-of-type(1):before {
+    content: "Time";
+  }
+
+  .medshi-geo-block-table-wrapper table td:nth-of-type(2):before {
+    content: "IP Address";
+  }
+
+  .medshi-geo-block-table-wrapper table td:nth-of-type(3):before {
+    content: "Country";
+  }
+
+  .medshi-geo-block-table-wrapper table td:nth-of-type(4):before {
+    content: "Status";
+  }
+}
+
+/* For smaller mobile screens */
+@media screen and (max-width: 480px) {
+  .medshi-geo-block-card-body {
+    padding: 10px;
+  }
+
+  .medshi-geo-block-card-value {
+    font-size: 22px;
+  }
+
+  .medshi-geo-block-section-header h3 {
+    font-size: 16px;
+  }
+
+  .medshi-geo-block-dashboard-content {
+    margin-top: 10px;
+  }
+}
+
+/* New Country Selector Styles */
+.medshi-geo-block-country-selector-container {
+  border: 1px solid #ccd0d4;
+  padding: 15px;
+  background: #fff;
+  border-radius: 4px;
+  margin-bottom: 20px; /* Added for spacing */
+}
+
+.medshi-geo-block-region-filters {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.medshi-geo-block-country-search-container {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.medshi-geo-block-country-search {
+  width: 100%;
+  padding: 8px 10px;
+  padding-right: 30px; /* Space for icon */
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.medshi-geo-block-country-search-container .dashicons-search {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+.medshi-geo-block-select-all-controls {
+  margin-bottom: 10px;
+}
+
+.medshi-geo-block-country-list-columns {
+  max-height: 300px; /* Or desired height */
+  overflow-y: auto;
+  border: 1px solid #eee;
+  padding: 10px;
+  background-color: #f9f9f9;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 10px;
+  height: auto !important; /* Force height to adapt to content */
+  min-height: 100px; /* Provide minimum height for empty/nearly empty lists */
+}
+
+/* Responsive adjustments for country list columns */
+@media screen and (max-width: 782px) {
+  .medshi-geo-block-country-list-columns {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .medshi-geo-block-country-list-columns {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+  }
+}
+
+/* Ensure placeholders are visible */
+.medshi-geo-block-region-filters em,
+.medshi-geo-block-select-all-controls em,
+.medshi-geo-block-country-list em {
+  color: #777;
+  font-style: italic;
+  display: block; /* Ensure they take up space if container is flex/grid */
+  padding: 5px 0;
+}
+
+/* Country Toggle Styling */
+.medshi-geo-block-country-item {
+  margin-bottom: 8px;
+}
+
+.medshi-geo-block-country-toggle-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 3px;
+  transition: background-color 0.2s;
+}
+
+.medshi-geo-block-country-toggle-label:hover {
+  background-color: #f0f0f0;
+}
+
+.medshi-geo-block-country-toggle {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.medshi-geo-block-toggle-slider {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 20px;
+  transition: background-color 0.2s;
+  margin-right: 8px;
+}
+
+.medshi-geo-block-toggle-slider::before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.medshi-geo-block-country-toggle:checked + .medshi-geo-block-toggle-slider {
+  background-color: #4A90E2;
+}
+
+.medshi-geo-block-country-toggle:checked + .medshi-geo-block-toggle-slider::before {
+  transform: translateX(14px);
+}
+
+.medshi-geo-block-country-flag {
+  margin-right: 8px;
+  font-size: 1.2em;
+}
+
+.medshi-geo-block-country-name {
+  font-size: 13px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 782px) {
+  .medshi-geo-block-country-list-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .medshi-geo-block-country-list-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Region Filter Buttons */
+.medshi-geo-block-region-filters {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.medshi-geo-block-region-filter-btn {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 13px;
+  padding: 4px 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.medshi-geo-block-region-filter-btn:hover {
+  background-color: #f0f0f0;
+  border-color: #999;
+}
+
+.medshi-geo-block-region-filter-btn.active {
+  background-color: #4A90E2;
+  border-color: #2171B1;
+  color: #fff;
+}
+
+/* Select/Deselect All Controls */
+.medshi-geo-block-select-all-controls {
+  margin-bottom: 15px;
+}
+
+.medshi-geo-block-select-all-controls label {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.medshi-geo-block-select-all-controls input[type="checkbox"] {
+  margin: 0;
+}
+
+/* Blocking Mode Tabs */
+.medshi-geo-block-mode-tabs-container {
+  display: flex;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.medshi-geo-block-mode-tab {
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  color: #555;
+  border-right: 1px solid #ccc;
+  flex-grow: 1;
+  text-align: center;
+  font-weight: 500;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.medshi-geo-block-mode-tab:last-child {
+  border-right: none;
+}
+
+.medshi-geo-block-mode-tab:hover {
+  background-color: #e0e0e0;
+}
+
+.medshi-geo-block-mode-tab-active {
+  background-color: #2271b1;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Country Selector Container Border Colors */
+.medshi-geo-block-country-selector-container {
+  transition: border-color 0.3s ease-in-out;
+}
+
+.medshi-geo-block-border-block {
+  border-color: #dc3232;
+  border-left: 4px solid #dc3232;
+}
+
+.medshi-geo-block-border-allow {
+  border-color: #46b450;
+  border-left: 4px solid #46b450;
+}
+
+/* Blocking Rules Tab Styling */
+.medshi-geo-block-rules-content-wrapper {
+    background-color: #fff;
+    padding: 1px 20px 20px 20px; /* 1px top padding helps with margin collapse of first child */
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Contain floated elements and prevent overflow */
+    position: relative; /* Establish positioning context */
+}
+
+/* Clear any floats at the end of the wrapper */
+.medshi-geo-block-rules-content-wrapper::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.medshi-geo-block-save-actions {
+    margin-top: 20px;
+    clear: both; /* Ensure it clears any floated elements */
+    text-align: center; /* Center the button */
+}
+
+/* Ensure form doesn't create extra space */
+.medshi-geo-block-rules-content-wrapper form {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Fix for country list container when empty or nearly empty */
+.medshi-geo-block-country-list:empty,
+.medshi-geo-block-country-list-columns:empty {
+    min-height: 50px; /* Smaller min-height when empty */
+    height: auto !important;
+}
+
+.medshi-geo-block-country-list-empty {
+    width: 100%;
+    text-align: center;
+    color: #666;
+    padding: 15px 0; /* Reduced padding */
+    font-style: italic;
+    grid-column: 1 / -1;
+}
+
+/* Master Toggle Button Container */
+.medshi-geo-block-master-toggle-container {
+    text-align: center;
+    margin: 20px auto 25px; /* Increased spacing */
+    padding: 15px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Master Toggle Button Styles */
+.medshi-geo-block-master-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    color: #555;
+    text-decoration: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.medshi-geo-block-master-toggle .medshi-geo-block-toggle-icon {
+    font-size: 20px;
+    transition: transform 0.5s ease, color 0.3s;
+}
+
+.medshi-geo-block-master-toggle:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.medshi-geo-block-master-toggle.is-enabled {
+    background-color: #4CAF50;
+    color: #fff;
+    border-color: #388E3C;
+}
+
+.medshi-geo-block-master-toggle.is-enabled .medshi-geo-block-toggle-icon {
+    color: #fff;
+    transform: rotate(180deg);
+}
+
+.medshi-geo-block-spinner {
+    visibility: hidden;
+    float: none;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.medshi-geo-block-spinner.is-active {
+    visibility: visible;
+}
